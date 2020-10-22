@@ -1,6 +1,49 @@
 body {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 70px;
+    margin-right: 70px;
+    background-color: #F2F2F2;
+}
+
+#welcome {
+    margin: auto;
+    width: 80%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+}
+
+h1 {
+    position: relative;
+    font-family: Georgia;
+    font-size: 50px;
+}
+
+h2 {
+    position: relative;
+    font-family: Arial;
+}
+
+#title {
+    top: 100px;
+    left: 50px;
+}
+
+#tagline {
+    top: 70px;
+    left: 50px;
+}
+
+#logobox {
+    float: left;
+    width: 300px;
+    height: 300px;
+}
+
+#logo {
+    border-radius: 50%;
 }
