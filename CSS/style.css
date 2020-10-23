@@ -7,7 +7,7 @@ body {
 }
 
 #welcome {
-    margin: auto;
+    margin: 0 auto;
     width: 80%;
 }
 
@@ -18,22 +18,23 @@ img {
 }
 
 h1 {
-    position: relative;
     font-family: Georgia;
-    font-size: 50px;
+    font-size: 30px;
 }
 
 h2 {
-    position: relative;
     font-family: Arial;
 }
 
 #title {
+    position: relative;
     top: 100px;
     left: 50px;
+    font-size: 50px;
 }
 
 #tagline {
+    position: relative;
     top: 70px;
     left: 50px;
 }
@@ -46,4 +47,14 @@ h2 {
 
 #logo {
     border-radius: 50%;
+}
+
+#members {
+    position: absolute;
+    top: 350px;
+    margin-left:100px;
+}
+
+#subheadings {
+    text-align: left;
 }
