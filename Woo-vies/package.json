@@ -1,0 +1,24 @@
+{
+  "name": "woo-vies",
+  "version": "1.0.0",
+  "description": "App to recommend movies and tv shows",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Mina Lee",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^10.1.4", 
+    "electron-packager": "^15.0.0",
+    "nodemon": "^2.0.4"
+  },
+  
+  "dependencies": {
+    "electron-log": "^4.2.2",
+    "imagemin": "^7.0.1",
+    "imagemin-mozjpeg": "^9.0.0",
+    "imagemin-pngquant": "^9.0.0",
+    "slash": "^3.0.0"
+  }
+}
