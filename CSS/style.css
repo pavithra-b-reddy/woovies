@@ -60,18 +60,21 @@ h2 {
     position: absolute;
     top: 400px;
     margin-left: 100px;
+    margin-right: 100px;
 }
 
 #features {
     position: absolute;
-    top: 450px;
+    top: 600px;
     margin-left: 100px;
+    margin-right: 100px;
 }
 
 #discussion {
     position: absolute;
-    top: 500px;
+    top: 700px;
     margin-left: 100px;
+    margin-right: 100px;
 }
 
 #github {
@@ -83,7 +86,8 @@ h2 {
 
 #links {
     position: absolute;
-    top: 550px;
+    top: 900px;
     margin-left: 800px;
+    margin-right: 100px;
 
 }
