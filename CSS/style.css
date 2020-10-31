@@ -54,27 +54,28 @@ h2 {
     position: absolute;
     top: 350px;
     margin-left: 100px;
+    margin-right: 150px;
 }
 
 #purpose {
     position: absolute;
     top: 400px;
     margin-left: 100px;
-    margin-right: 100px;
+    margin-right: 150px;
 }
 
 #features {
     position: absolute;
     top: 600px;
     margin-left: 100px;
-    margin-right: 100px;
+    margin-right: 150px;
 }
 
 #discussion {
     position: absolute;
-    top: 700px;
+    top: 850px;
     margin-left: 100px;
-    margin-right: 100px;
+    margin-right: 150px;
 }
 
 #github {
@@ -89,5 +90,6 @@ h2 {
     top: 900px;
     margin-left: 800px;
     margin-right: 100px;
+    margin-bottom: 50px;
 
 }
