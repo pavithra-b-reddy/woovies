@@ -1,7 +1,7 @@
 var inception = {'name':'Inception', 'year':2010, 'director': 'Christopher Nolan',
  'desc':'Inception Description', 'on_watchlist':0, 'genre':'Sci-Fi'}
 
-var endgame = {'name':"Avengers: Endgame", 'year':2019, 'director':'Anthony Russo and Joe Russ',
+var endgame = {'name':"Avengers: Endgame", 'year':2019, 'director':'Anthony Russo and Joe Russo',
 'desc':'Endgame description', 'on_watchlist':0, 'genre':'Action'}
 
 var joker = {'name':'Joker', 'year':2019, 'director':'Todd Phillips',
