@@ -58,7 +58,7 @@ function search() {
     //look through movies db
     for (var i = 0; i < movies.length; i++) {
         if (movies[i].name == input) {
-            string = "<a href=\"\">Back to Search</a> <br> <img src=" + movies[i].poster + ">";
+            string = "<a href=\"\">Back to Search</a> <br> <a href=\"moviedetail.html\"><img src=" + movies[i].poster + "></a>";
             resultsdiv.innerHTML = string;
         }
     }
@@ -66,7 +66,7 @@ function search() {
     //look through shows db
     for (var i = 0; i < shows.length; i++) {
         if (shows[i].name == input) {
-            string = "<a href=\"\">Back to Search</a> <br> <img src=" + shows[i].poster + ">";
+            string = "<a href=\"\">Back to Search</a> <br> <a href=\"moviedetail.html\"><img src=" + shows[i].poster + "></a>";
             resultsdiv.innerHTML = string;
         }
     }
