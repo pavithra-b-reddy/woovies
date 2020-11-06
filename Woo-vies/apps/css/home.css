@@ -1,0 +1,30 @@
+#recommend {
+    width: 800px;
+    height: 400px;
+    margin: 100px;
+}
+
+#menu {
+    list-style: none;
+    overflow: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+#menu::-webkit-scrollbar {
+    display: none;
+}
+
+.item {
+    display: inline-block;
+    flex: 0 0 auto;
+    height: 400px;
+    width: 300px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+img {
+    height: 400px;
+    width: auto;
+}
