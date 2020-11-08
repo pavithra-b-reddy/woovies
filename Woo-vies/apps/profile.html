@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline'">
     <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/theme.css">
     <title>Profile</title>
 </head>
 <center>
@@ -16,11 +17,12 @@
 </ul>
 <br><br><br>
 <body>
-    <button type="button" class="button">View Watchlist</button><br>
-    <button type="button" class="button">Change Password</button><br>
-    <button type="button" class="button">Change display picture</button><br>
-    <button type="button" class="button">Change username</button><br>
-    <button type="button" class="button">Log out</button>
+  <form method="post">
+    <button type="submit" class="button" formaction="watchlist.html">View Watchlist</button><br>
+    <button type="submit" class="button" formaction="password.html">Change Password</button><br>
+    <button type="submit" class="button" formaction="username.html">Change username</button><br>
+    <button type="submit" class="button" formaction="login.html">Log out</button>
+  </form>
 </body>
 </center>
 </html>
