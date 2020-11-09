@@ -13,8 +13,8 @@ let MainWindow, AboutWindow;
 function createMainWindow() {
     MainWindow = new BrowserWindow({
         title: 'Woo-vies', 
-        width: isDev ? 800 : 500,
-        height: 600,
+        width: isDev ? 1600:400,
+        height: 1000,
         icon: './assets/icons/logo.png',
         resizable: isDev,
         backgroundColor: 'white',
