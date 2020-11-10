@@ -20,6 +20,7 @@ img {
 h1 {
     font-family: Georgia;
     font-size: 30px;
+    text-align: left;
 }
 
 h2 {
@@ -52,9 +53,76 @@ h2 {
 #members {
     position: absolute;
     top: 350px;
-    margin-left:100px;
+    margin-left: 100px;
+    margin-right: 150px;
 }
 
-#subheadings {
-    text-align: left;
+#purpose {
+    position: absolute;
+    top: 400px;
+    margin-left: 100px;
+    margin-right: 150px;
 }
+
+#features {
+    position: absolute;
+    top: 400px;
+    margin-left: 100px;
+    margin-right: 150px;
+}
+
+#discussion {
+    position: absolute;
+    top: 400px;
+    margin-left: 100px;
+    margin-right: 150px;
+}
+
+#github {
+    position: absolute;
+    margin-left: 500px;
+    max-width: 100%;
+}
+
+
+#links {
+    position: absolute;
+    top: 900px;
+    margin-left: 800px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+
+}
+
+.ul {
+    position: relative;
+    left: 30px;
+    top: 100px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(223, 200, 172);
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color:black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  li a:hover {
+    background-color: rgb(255, 207, 168);
+  }
+  
+  li a:active {
+    background-color: #111;
+    color:rgb(255, 207, 168);
+  }
