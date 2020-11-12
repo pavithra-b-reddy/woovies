@@ -17,12 +17,15 @@
 </ul>
 <body>
     <h1>Search</h1>
-    <form id="form">
-        <input id="search" type="text" placeholder="Search for movies/TV shows">
-        <button id="submit" type="submit">Submit</button>
-        <button id="filter">Filter</button>
-    </form>
-
+    <div class="wrap">
+        <div class = "search">
+        <form id="form">
+            <input class = "searchTerm" id="search" type="text" placeholder="Search for movies/TV shows">
+            <button class = "searchButton" id="submit" type="submit">Submit</button>
+            <button class = "searchButton" id="filter" action = "filter.html">Filter</button>
+        </form>
+        </div>
+    </div>
     <div id="results" style="display: none;">
         <p> Nothing found!</p>
     </div>
