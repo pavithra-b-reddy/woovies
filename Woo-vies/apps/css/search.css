@@ -10,19 +10,15 @@ body{
 }
 
 .search {
-  width: 100%;
-  position: relative;
-  display: flex;
+  width: 50%;
 }
 
 .searchTerm {
-  width: 150%;
+  width: 50%;
   border: 3px solid #00B4CC;
-  border-right: none;
   padding: 5px;
   height: 20px;
-  border-radius: 5px 0 0 5px;
-  outline: none;
+  border-radius: 5px 5px 5px 5px;
   color: #9DBFAF;
 }
 
@@ -31,22 +27,23 @@ body{
 }
 
 .searchButton {
+  position:auto;
   width: 80px;
   height: 36px;
   border: 1px solid #00B4CC;
   background: #00B4CC;
   text-align: center;
   color: #fff;
-  border-radius: 0 5px 5px 0;
+  border-radius: 5px 5px 5px 5px;
   cursor: pointer;
   font-size: 15px;
 }
 
 /*Resize the wrap to see the search bar change!*/
 .wrap{
-  width: 100%;
+  width: 75%;
   position: absolute;
-  top: 40%;
-  left: 70%;
-  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-20%, -50%);
 }

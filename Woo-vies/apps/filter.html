@@ -6,6 +6,7 @@
     <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline'">
     <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/filter.css">
     <title>Choose the content you want to search for</title>
 </head>
 <center>
@@ -34,8 +35,10 @@
     <button type="button" class="button">Mystery</button>
     <button type="button" class="button">Sci-Fi</button>
     <br><br><br>
-    <button type="button" class="button">Reset filters</button>
-    <button type="button" class="button">Apply</button>
+    <form>
+      <button class="button" type="submit" formaction="search.html">Reset filters</button>
+      <button class="button" type="submit" formaction="search.html">Apply</button>
+    </form>
 </body>
 </center>
 </html>
