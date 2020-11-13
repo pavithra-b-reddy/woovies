@@ -6,9 +6,11 @@
     <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline'">
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/glider.min.css">
     <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
     <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="js/homescript.js"></script>
+    <script type="text/javascript" src="js/glider.min.js"></script>
     <script>if (window.module) module = window.module;</script>
     <title>Home</title>
 </head>
@@ -22,33 +24,17 @@
 <body>
     <h1>Welcome to WOO-VIES!</h1>
     <h2>Top Recommendations For You</h2>
-    <div id="recommend">
-        <ul id="menu">
-            <li class="item">
-                <img src="../assets/posters/endgame.jpg" alt="Avengers: Endgame">
-
-            </li>
-            <li class="item">
-                <img src="../assets/posters/breaking_bad.jpg" alt="Breaking Bad">
-
-            </li>
-            <li class="item">
-                <img src="../assets/posters/black_mirror.jpg" alt="Black Mirror">
-            </li>
-            <li class="item">
-                <img src="../assets/posters/inception.jpg" alt="Inception">
-            </li>
-            <li class="item">
-                <img src="../assets/posters/joker.jpg" alt="Joker">
-            </li>
-            <li class="item">
-                <img src="../assets/posters/sherlock.jpg" alt="Sherlock">
-            </li>
-        </ul>
-
-        <button id="leftnav">&lt;</button>
-        <button id="rightnav">&gt;</button>
-
+    <div id="recommend" class="glider-contain">
+        <div class="glider">
+            <div><img src="../assets/posters/endgame.jpg"></div>
+            <div><img src="../assets/posters/breaking_bad.jpg"></div>
+            <div><img src="../assets/posters/joker.jpg"></div>
+            <div><img src="../assets/posters/inception.jpg"></div>
+            <div><img src="../assets/posters/black_mirror.jpg"></div>
+        </div>
+        <button aria-label="Previous" class="glider-prev">«</button>
+        <button aria-label="Next" class="glider-next">»</button>
+        <div role="tablist" class="dots"></div>
     </div>
 </body>
 </html>
