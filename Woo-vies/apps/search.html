@@ -11,7 +11,7 @@
 </head>
 <ul class="ul">
   <li><a href="home.html">Home</a></li>
-  <li><a href="search.html">Search</a></li>
+  <li><a class="active_link">Search</a></li>
   <li><a href="profile.html">Profile</a></li>
   <li><a href="watchlist.html">Watchlist</a></li>
 </ul>
@@ -21,14 +21,32 @@
         <div class = "search">
         <form id="form">
             <input class = "searchTerm" id="search" type="text" placeholder="Search for movies/TV shows">
-            <button class = "searchButton" id="submit" type="submit">Submit</button>
+            <button class = "searchButton" id="submit" type="submit" onclick="myFunction()">Submit</button>
             <button class = "searchButton" id="filter" type="submit" formaction = "filter.html">Filter</button>
         </form>
         </div>
     </div>
-    <div id="results" style="display: none;">
-        <p> Nothing found!</p>
+    <div id="results">
+        <p id="demo"></p>
     </div>
+    <script>
+    function myFunction() {
+      var x = document.getElementById("form");
+      var text = "";
+      const arr = [{"name":"ABC", "text":"bleh"},
+      {"name":"hello", "text":"bleh2"}];
+
+      var i;
+      for (i = 0; i < x.length ;i++) {
+        text += x.elements[i].value + "<br>";
+      }
+      if (arr.filter(x => x.name === "hello")) {
+        document.getElementById("demo").innerHTML = text;
+      }
+
+    }
+    </script>
+
 
 </body>
 </html>
