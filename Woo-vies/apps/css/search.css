@@ -3,3 +3,47 @@ img {
     height: 450px;
     padding: 10px;
 }
+
+body{
+  background: #f2f2f2;
+  font-family: "Lucida Grande", sans-serif;
+}
+
+.search {
+  width: 50%;
+}
+
+.searchTerm {
+  width: 50%;
+  border: 3px solid #333;
+  padding: 5px;
+  height: 23px;
+  border-radius: 5px 5px 5px 5px;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: black;
+}
+
+.searchButton {
+  position:auto;
+  width: 80px;
+  height: 36px;
+  border: 1px solid #333;
+  background: #333;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px 5px 5px 5px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 75%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-20%, -50%);
+}

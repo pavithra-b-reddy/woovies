@@ -41,7 +41,6 @@ shows = [{'name':'Black Mirror', 'Available to stream at:':'', 'episodes':22,
 'poster':'../assets/posters/stranger_things.jpg'}]
 
 
-
 function display() {
     //stop hiding results
     var results = document.getElementById('results');
