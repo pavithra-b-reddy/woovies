@@ -10,6 +10,8 @@ var watchlist =
 
     string = "";
     for (var i = 0; i < watchlist.length; i++) {
+        string += "<a href=\"moviedetail.html\">"
         string += watchlist[i].img;
+        string += "</a>"
     }
     document.getElementById('column').innerHTML = string;
