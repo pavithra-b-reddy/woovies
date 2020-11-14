@@ -15,9 +15,9 @@ body{
 
 .searchTerm {
   width: 50%;
-  border: 3px solid #00B4CC;
+  border: 3px solid #333;
   padding: 5px;
-  height: 20px;
+  height: 23px;
   border-radius: 5px 5px 5px 5px;
   color: #9DBFAF;
 }
@@ -30,8 +30,8 @@ body{
   position:auto;
   width: 80px;
   height: 36px;
-  border: 1px solid #00B4CC;
-  background: #00B4CC;
+  border: 1px solid #333;
+  background: #333;
   text-align: center;
   color: #fff;
   border-radius: 5px 5px 5px 5px;
