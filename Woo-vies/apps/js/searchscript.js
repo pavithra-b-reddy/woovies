@@ -58,7 +58,7 @@ function search() {
     for (var i = 0; i < movies.length; i++) {
         if (movies[i].name == input) {
             if (movies[i].name == "Avengers: Endgame"){
-                string = "<a href=\"\">Back to Search</a> <br> <a href=\"details/Avengers: Endgame.html\"><img src=" + movies[i].poster + "></a>";
+                string = "<a href=\"\">Back to Search</a> <br> <a href=\"details/Avengers_Endgame.html\"><img src=" + movies[i].poster + "></a>";
             }
             else if (movies[i].name == "Inception"){
                 string = "<a href=\"\">Back to Search</a> <br> <a href=\"details/Inception.html\"><img src=" + movies[i].poster + "></a>";
