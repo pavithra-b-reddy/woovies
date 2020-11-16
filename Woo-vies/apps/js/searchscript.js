@@ -1,6 +1,6 @@
 //added links to posters
 movies = [{'name':'Inception', 'year':2010, 'director': 'Christopher Nolan',
-'desc':'Inception Description', 'on_watchlist':0, 'genre':'Sci-Fi', 
+'desc':'Inception Description', 'on_watchlist':0, 'genre':'Sci-Fi',
 'poster':'../assets/posters/inception.jpg'},
 
 {'name':"Avengers: Endgame", 'year':2019, 'director':'Anthony Russo and Joe Russo',
@@ -16,7 +16,7 @@ movies = [{'name':'Inception', 'year':2010, 'director': 'Christopher Nolan',
 'poster':'../assets/posters/split.jpg'},
 
 {'name':'Jurassic Park', 'year':1993, 'director':'Steven Spielberg',
-'desc':'Jurassic Park description', 'on_watchlist':0, 'genre':'Sci-Fi', 
+'desc':'Jurassic Park description', 'on_watchlist':0, 'genre':'Sci-Fi',
 'poster':'../assets/posters/jurassic.jpg'}]
 
 
@@ -58,22 +58,22 @@ function search() {
     for (var i = 0; i < movies.length; i++) {
         if (movies[i].name == input) {
             if (movies[i].name == "Avengers: Endgame"){
-                string = "<a href=\"\">Back to Search</a> <br> <a href=\"details/Avengers_Endgame.html\"><img src=" + movies[i].poster + "></a>";
+                string = "<a href=\"\" class=\"link\">Back to Search</a> <br> <a href=\"details/Avengers_Endgame.html\"><img src=" + movies[i].poster + "></a>";
             }
             else if (movies[i].name == "Inception"){
-                string = "<a href=\"\">Back to Search</a> <br> <a href=\"details/Inception.html\"><img src=" + movies[i].poster + "></a>";
+                string = "<a href=\"\" class=\"link\">Back to Search</a> <br> <a href=\"details/Inception.html\"><img src=" + movies[i].poster + "></a>";
             }
             else if (movies[i].name == "Joker"){
-                string = "<a href=\"\">Back to Search</a> <br> <a href=\"details/Joker.html\"><img src=" + movies[i].poster + "></a>";
+                string = "<a href=\"\" class=\"link\">Back to Search</a> <br> <a href=\"details/Joker.html\"><img src=" + movies[i].poster + "></a>";
             }
             else if (movies[i].name == "Jurassic Park"){
-                string = "<a href=\"\">Back to Search</a> <br> <a href=\"details/Jurassic Park.html\"><img src=" + movies[i].poster + "></a>";
+                string = "<a href=\"\" class=\"link\">Back to Search</a> <br> <a href=\"details/Jurassic Park.html\"><img src=" + movies[i].poster + "></a>";
             }
             else if (movies[i].name == "Split"){
-                string = "<a href=\"\">Back to Search</a> <br> <a href=\"details/Split.html\"><img src=" + movies[i].poster + "></a>";
+                string = "<a href=\"\" class=\"link\">Back to Search</a> <br> <a href=\"details/Split.html\"><img src=" + movies[i].poster + "></a>";
             }
 
-            resultsdiv.innerHTML = string;          
+            resultsdiv.innerHTML = string;
         }
     }
 
@@ -81,22 +81,22 @@ function search() {
     for (var i = 0; i < shows.length; i++) {
         if (shows[i].name == input) {
             if (shows[i].name == "Black Mirror"){
-                string = "<a href=\"\">Back to Search</a> <br> <a href=\"details/Black Mirror.html\"><img src=" + shows[i].poster + "></a>";
+                string = "<a href=\"\" class=\"link\">Back to Search</a> <br> <a href=\"details/Black Mirror.html\"><img src=" + shows[i].poster + "></a>";
             }
             if (shows[i].name == "Breaking Bad"){
-                string = "<a href=\"\">Back to Search</a> <br> <a href=\"details/Breaking Bad.html\"><img src=" + shows[i].poster + "></a>";
+                string = "<a href=\"\" class=\"link\">Back to Search</a> <br> <a href=\"details/Breaking Bad.html\"><img src=" + shows[i].poster + "></a>";
             }
             if (shows[i].name == "Sherlock"){
-                string = "<a href=\"\">Back to Search</a> <br> <a href=\"details/Sherlock.html\"><img src=" + shows[i].poster + "></a>";
+                string = "<a href=\"\" class=\"link\">Back to Search</a> <br> <a href=\"details/Sherlock.html\"><img src=" + shows[i].poster + "></a>";
             }
             if (shows[i].name == "Stranger Things"){
-                string = "<a href=\"\">Back to Search</a> <br> <a href=\"details/Stranger Things.html\"><img src=" + shows[i].poster + "></a>";
+                string = "<a href=\"\" class=\"link\">Back to Search</a> <br> <a href=\"details/Stranger Things.html\"><img src=" + shows[i].poster + "></a>";
             }
             if (shows[i].name == "The Good Place"){
-                string = "<a href=\"\">Back to Search</a> <br> <a href=\"details/The Good Place.html\"><img src=" + shows[i].poster + "></a>";
+                string = "<a href=\"\" class=\"link\">Back to Search</a> <br> <a href=\"details/The Good Place.html\"><img src=" + shows[i].poster + "></a>";
             }
             resultsdiv.innerHTML = string
-           
+
         }
     }
 
