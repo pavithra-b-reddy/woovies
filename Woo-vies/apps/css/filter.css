@@ -13,5 +13,7 @@
 }
 
 .button:focus {
-  background: green;
+  outline: none;
+  box-shadow: none;
+  background: #333;
 }
