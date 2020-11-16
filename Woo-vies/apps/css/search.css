@@ -19,10 +19,12 @@ body{
   padding: 5px;
   height: 23px;
   border-radius: 5px 5px 5px 5px;
-  color: #9DBFAF;
+  color: black;
 }
 
 .searchTerm:focus{
+  outline: none;
+  box-shadow: none;
   color: black;
 }
 

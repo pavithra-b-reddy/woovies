@@ -33,17 +33,12 @@
     function myFunction() {
       var x = document.getElementById("form");
       var text = "";
-      const arr = [{"name":"ABC", "text":"bleh"},
-      {"name":"hello", "text":"bleh2"}];
 
       var i;
       for (i = 0; i < x.length ;i++) {
         text += x.elements[i].value + "<br>";
       }
-      if (arr.filter(x => x.name === "hello")) {
-        document.getElementById("demo").innerHTML = text;
-      }
-
+      document.getElementById("demo").innerHTML = "Sorry! No results were found.";
     }
     </script>
 
