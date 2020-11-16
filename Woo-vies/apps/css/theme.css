@@ -19,6 +19,11 @@ body {
    background: 	#333
  }
 
+ .button:focus {
+   outline: none;
+   box-shadow: none;
+ }
+
 .ul {
   list-style-type: none;
   margin: 0;
@@ -63,4 +68,49 @@ html, body {
 
 .active_link {
   background-color: #111;
+}
+
+.checkbox {
+
+}
+
+#checkbox {
+  font: 13px/20px "Lucida Grande", Tahoma, Verdana, sans-serif;
+  border: none;
+  border-radius: 5px 5px 5px 5px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background: #708090
+}
+
+#checkbox label {
+    float:left;
+}
+
+#checkbox label span {
+    text-align:center;
+    padding:3px 0px;
+    display:inline;
+}
+
+.checked {
+    background-color:#911;
+    color:#fff;
+}
+
+#checkbox:hover {
+  background-color: #333;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+  padding-left: 10px;
+  font-size: 18px;
 }

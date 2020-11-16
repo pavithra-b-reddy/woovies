@@ -39,6 +39,11 @@ body{
   font-size: 15px;
 }
 
+.searchButton:hover {
+  outline: none;
+  box-shadow: none;
+}
+
 /*Resize the wrap to see the search bar change!*/
 .wrap{
   width: 75%;
