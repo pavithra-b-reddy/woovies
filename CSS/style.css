@@ -3,7 +3,7 @@ body {
     margin-bottom: 30px;
     margin-left: 70px;
     margin-right: 70px;
-    background-color: #F2F2F2;
+    background-color: #F1F1F1;
 }
 
 #welcome {
@@ -66,14 +66,14 @@ h2 {
 
 #features {
     position: absolute;
-    top: 600px;
+    top: 400px;
     margin-left: 100px;
     margin-right: 150px;
 }
 
 #discussion {
     position: absolute;
-    top: 850px;
+    top: 400px;
     margin-left: 100px;
     margin-right: 150px;
 }
@@ -93,3 +93,40 @@ h2 {
     margin-bottom: 50px;
 
 }
+
+.ul {
+    position: relative;
+    left: 30px;
+    top: 100px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(223, 200, 172);
+  }
+
+  li {
+    float: left;
+  }
+
+  li a {
+    display: block;
+    color:black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  li a:hover {
+    background-color: rgb(255, 207, 168);
+  }
+
+  .active {
+    background-color: #13266E;
+    color: white;
+  }
+
+  .active:hover {
+    background-color: #13266E;
+  }
