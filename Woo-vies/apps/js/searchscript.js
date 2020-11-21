@@ -49,6 +49,8 @@ function display() {
     }
     document.getElementById('form').innerHTML = "";
     document.getElementById('title').innerHTML = "";
+    document.getElementById('filters').innerHTML = "";
+    document.getElementById('spaces').innerHTML = "";
 }
 
 

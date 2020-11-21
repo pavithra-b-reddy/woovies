@@ -6,6 +6,7 @@
     <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline'">
     <link rel="stylesheet" href="css/search.css">
     <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/filter.css">
     <script type="text/javascript" src="js/searchscript.js"></script>
     <title>Search</title>
 </head>
@@ -17,12 +18,14 @@
 </ul>
 <body>
     <h1 id="title">Search</h1>
+    <form id="spaces">
+    <br><br><br><br><br><br><br><br><br><br>
+    </form>
     <div class="wrap">
         <div class = "search">
         <form id="form">
             <input class = "searchTerm" id="search" type="text" placeholder="Search for movies/TV shows">
             <button class = "searchButton" id="submit" type="submit" onclick="myFunction()">Submit</button>
-            <button class = "searchButton" id="filter" type="submit" formaction = "filter.html">Filter</button>
         </form>
         </div>
     </div>
@@ -41,7 +44,68 @@
       document.getElementById("demo").innerHTML = "Sorry! No results were found.";
     }
     </script>
-
-
+    <center>
+    <form id="filters">
+    <p>
+      What type of content do you want to search for?
+    </p>
+    <div id="checkbox">
+      <label>
+        <input type="checkbox">
+        Movies
+      </label>
+    </div>
+    <div id="checkbox">
+      <label>
+        <input type="checkbox">
+        TV Shows
+      </label>
+    </div>
+    <br><br>
+    <p>
+      What genre of content do you want to search for?
+    </p>
+    <div id="checkbox">
+      <label>
+        <input type="checkbox">
+        Action
+      </label>
+    </div>
+    <div id="checkbox">
+      <label>
+        <input type="checkbox">
+        Adventure
+      </label>
+    </div>
+    <div id="checkbox">
+      <label>
+        <input type="checkbox">
+        Comedy
+      </label>
+    </div>
+    <div id="checkbox">
+      <label>
+        <input type="checkbox">
+        Thriller
+      </label>
+    </div>
+    <div id="checkbox">
+      <label>
+        <input type="checkbox">
+        Mystery
+      </label>
+    </div>
+    <div id="checkbox">
+      <label>
+        <input type="checkbox">
+        Sci-Fi
+      </label>
+    </div>
+    <br><br><br>
+    <form>
+      <button class="button" type="submit" formaction="search.html">Reset Filters</button>
+    </form>
+  </form>
+  </center>
 </body>
 </html>
