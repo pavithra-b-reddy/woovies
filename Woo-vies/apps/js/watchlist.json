@@ -1,5 +1,5 @@
-[{"name":"Inception", "img":"<img src=\"../assets/posters/inception.jpg\">"},
+[{"name":"Inception", "img":"<img src=\"../assets/posters/inception.jpg\">", "added": "true"},
 
-{"name":"Avengers: Endgame", "img":"<img src=\"../assets/posters/endgame.jpg\">"},
+    {"name":"Avengers: Endgame", "img":"<img src=\"../assets/posters/endgame.jpg\">", "added": "true"},
     
-{"name":"Black Mirror", "img":"<img src=\"../assets/posters/black_mirror.jpg\">"}]
+    {"name":"Black Mirror", "img":"<img src=\"../assets/posters/black_mirror.jpg\">", "added": "true"}]

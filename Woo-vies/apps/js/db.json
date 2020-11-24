@@ -1,0 +1,10 @@
+[{"name":"Inception","img":"<img src=\"../assets/posters/inception.jpg\">","added":"true"},
+    {"name":"Avengers: Endgame","img":"<img src=\"../assets/posters/endgame.jpg\">","added":"true"},
+    {"name":"Black Mirror","img":"<img src=\"../assets/posters/black_mirror.jpg\">","added":"true"},
+    {"name":"Breaking Bad","img":"<img src=\"../assets/posters/breaking_bad.jpg\">","added":"false"},
+    {"name":"Joker","img":"<img src=\"../assets/posters/joker.jpg\">","added":"false"},
+    {"name":"The Good Place","img":"<img src=\"../assets/posters/good_place.jpg\">","added":"false"},
+    {"name":"Jurassic Park","img":"<img src=\"../assets/posters/jurassic.jpg\">","added":"false"},
+    {"name":"Sherlock","img":"<img src=\"../assets/posters/sherlock.jpg\">","added":"false"},
+    {"name":"Split","img":"<img src=\"../assets/posters/split.jpg\">","added":"false"},
+    {"name":"Stranger Things","img":"<img src=\"../assets/posters/stranger_things.jpg\">","added":"false"}]

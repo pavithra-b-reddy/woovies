@@ -2,17 +2,6 @@ const fs = require("fs");
 let data = fs.readFileSync("./apps/js/watchlist.json");
 let watchlist = JSON.parse(data);
 
-/*
-var watchlist = 
-[
-        {name:"Inception", img:"<img src=\"../assets/posters/inception.jpg\">"},
-
-        {name:"Avengers: Endgame", img:"<img src=\"../assets/posters/endgame.jpg\">"},
-
-        {name:"Black Mirror", img:"<img src=\"../assets/posters/black_mirror.jpg\">"}
-        
-]*/
-
     string = "";
     for (var i = 0; i < watchlist.length; i++) {
         if (watchlist[i]["name"] == "Inception") {
@@ -66,11 +55,11 @@ function add(str) {
     let data2 = fs.readFileSync("./apps/js/watchlist.json");
     let watchlist2 = JSON.parse(data);
 
-    //let obj;
     if (str == "Avengers") {
         let avengers = {
             name:"Avengers: Endgame", 
-            img:"<img src=\"../assets/posters/endgame.jpg\">"
+            img:"<img src=\"../assets/posters/endgame.jpg\">",
+            added: "true"
         };
         watchlist2.push(avengers);
     }
@@ -78,7 +67,8 @@ function add(str) {
     if (str == "Black Mirror") {
         let bm = {
             name:"Black Mirror", 
-            img:"<img src=\"../assets/posters/black_mirror.jpg\">"
+            img:"<img src=\"../assets/posters/black_mirror.jpg\">",
+            added: "true"
         };
         watchlist2.push(bm);
     }
@@ -86,7 +76,8 @@ function add(str) {
     if (str == "Breaking Bad") {
         let bb = {
             name:"Breaking Bad", 
-            img:"<img src=\"../assets/posters/breaking_bad.jpg\">"
+            img:"<img src=\"../assets/posters/breaking_bad.jpg\">",
+            added: "true"
         };
         watchlist2.push(bb);
     }
@@ -94,7 +85,8 @@ function add(str) {
     if (str == "Inception") {
         let inception = {
             name:"Inception", 
-            img:"<img src=\"../assets/posters/inception.jpg\">"
+            img:"<img src=\"../assets/posters/inception.jpg\">",
+            added: "true"
         };
         watchlist2.push(inception);
     }
@@ -102,7 +94,8 @@ function add(str) {
     if (str == "Joker") {
         let joker = {
             name: "Joker",
-            img: "<img src=\"../assets/posters/joker.jpg\">"
+            img: "<img src=\"../assets/posters/joker.jpg\">",
+            added: "true"
         };
         watchlist2.push(joker);
     }
@@ -110,7 +103,8 @@ function add(str) {
     if (str == "Jurassic Park") {
         let jp = {
             name:"Jurassic Park", 
-            img:"<img src=\"../assets/posters/jurassic.jpg\">"
+            img:"<img src=\"../assets/posters/jurassic.jpg\">",
+            added: "true"
         };
         watchlist2.push(jp);
     }
@@ -118,7 +112,8 @@ function add(str) {
     if (str == "Sherlock") {
         let sherlock = {
             name:"Sherlock", 
-            img:"<img src=\"../assets/posters/sherlock.jpg\">"
+            img:"<img src=\"../assets/posters/sherlock.jpg\">",
+            added: "true"
         };
         watchlist2.push(sherlock);
     }
@@ -126,7 +121,8 @@ function add(str) {
     if (str == "Split") {
         let split = {
             name:"Split", 
-            img:"<img src=\"../assets/posters/split.jpg\">"
+            img:"<img src=\"../assets/posters/split.jpg\">",
+            added: "true"
         };
         watchlist2.push(split);
     }
@@ -134,7 +130,8 @@ function add(str) {
     if (str == "Stranger Things") {
         let st = {
             name:"Stranger Things", 
-            img:"<img src=\"../assets/posters/stranger_things.jpg\">"
+            img:"<img src=\"../assets/posters/stranger_things.jpg\">",
+            added: "true"
         };
         watchlist2.push(st);
     }
@@ -142,7 +139,8 @@ function add(str) {
     if (str == "The Good Place") {
         let tgp = {
             name:"The Good Place", 
-            img:"<img src=\"../assets/posters/good_place.jpg\">"
+            img:"<img src=\"../assets/posters/good_place.jpg\">",
+            added: "true"
         };
         watchlist2.push(tgp);
     }
@@ -150,38 +148,131 @@ function add(str) {
     fs.writeFileSync("./apps/js/watchlist.json", JSON.stringify(watchlist2));
 }
 
-function remove(str) {
-    if (str == "Avengers") {
-        for (var i = 0; i < watchlist.length; i++) {
-            if (watchlist[i].name == "Avengers: Endgame") {
-                watchlist.splice(i, 1);
-            }
-        }
 
-        for (var i = 0; i < watchlist.length; i++) {
-            console.log(watchlist[i].name);
+
+function remove(str) {
+    let data2 = fs.readFileSync("./apps/js/watchlist.json");
+    let watchlist2 = JSON.parse(data);
+
+    if (str == "Avengers") {
+        for (var i = 0; i < watchlist2.length; i++) {
+            if (watchlist2[i].name == "Avengers: Endgame") {
+                watchlist2.splice(i, 1);
+            }
         }
     }
 
+    if (str == "Black Mirror") {
+        for (var i = 0; i < watchlist2.length; i++) {
+            if (watchlist2[i].name == "Black Mirror") {
+                watchlist2.splice(i, 1);
+            }
+        }
+    }
+
+    if (str == "Breaking Bad") {
+        for (var i = 0; i < watchlist2.length; i++) {
+            if (watchlist2[i].name == "Breaking Bad") {
+                watchlist2.splice(i, 1);
+            }
+        }
+    }
+
+    if (str == "Inception") {
+        for (var i = 0; i < watchlist2.length; i++) {
+            if (watchlist2[i].name == "Inception") {
+                watchlist2.splice(i, 1);
+            }
+        }
+    }
+
+    if (str == "Joker") {
+        for (var i = 0; i < watchlist2.length; i++) {
+            if (watchlist2[i].name == "Joker") {
+                watchlist2.splice(i, 1);
+            }
+        }
+    }
+
+    if (str == "Jurassic Park") {
+        for (var i = 0; i < watchlist2.length; i++) {
+            if (watchlist2[i].name == "Jurassic Park") {
+                watchlist2.splice(i, 1);
+            }
+        }
+    }
+
+    if (str == "Sherlock") {
+        for (var i = 0; i < watchlist2.length; i++) {
+            if (watchlist2[i].name == "Sherlock") {
+                watchlist2.splice(i, 1);
+            }
+        }
+    }
+
+    if (str == "Split") {
+        for (var i = 0; i < watchlist2.length; i++) {
+            if (watchlist2[i].name == "Split") {
+                watchlist2.splice(i, 1);
+            }
+        }
+    }
+
+    if (str == "Stranger Things") {
+        for (var i = 0; i < watchlist2.length; i++) {
+            if (watchlist2[i].name == "Stranger Things") {
+                watchlist2.splice(i, 1);
+            }
+        }
+    }
+
+    if (str == "The Good Place") {
+        for (var i = 0; i < watchlist2.length; i++) {
+            if (watchlist2[i].name == "The Good Place") {
+                watchlist2.splice(i, 1);
+            }
+        }
+    }
+
+    fs.writeFileSync("./apps/js/watchlist.json", JSON.stringify(watchlist2));
+
 }
 
+
+
 function change_avengers() {
+    let data = fs.readFileSync("./apps/js/db.json");
+    let db = JSON.parse(data);
+    //add and remove change is for responsiveness purpose only, the page is supposed to load using details.js and whats in the json db
     var button = document.getElementById("add");
     if (button.value == "Add") {
         button.value = "Remove";
         button.innerHTML = "Remove from Watchlist";
-        add("Avengers");
 
+        add("Avengers");
+        for (var i = 0; i < db.length; i++) {
+            if (db[i].name == "Avengers: Endgame") {
+                db[i].added = "true";
+            }
+        }
     }
 
     else {
         button.value = "Add";
         button.innerHTML = "Add to Watchlist";
+
         remove("Avengers");
+        for (var i = 0; i < db.length; i++) {
+            if (db[i].name == "Avengers: Endgame") {
+                db[i].added = "false";
+            }
+        }
     }
 
+    fs.writeFileSync("./apps/js/db.json", JSON.stringify(db));
 }
 
+//change the rest like the one above
 function change_bm() {
     var button = document.getElementById("add");
     if (button.value == "Add") {
