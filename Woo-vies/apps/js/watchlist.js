@@ -70,7 +70,7 @@ function add(str) {
     if (str == "Avengers") {
         let avengers = {
             name:"Avengers: Endgame", 
-            img:"<img src=\"../assets/posters/inception.jpg\">"
+            img:"<img src=\"../assets/posters/endgame.jpg\">"
         };
         watchlist2.push(avengers);
     }
@@ -91,12 +91,12 @@ function add(str) {
         watchlist2.push(bb);
     }
 
-    if (str == "Joker") {
-        let avengers = {
-            name:"Avengers: Endgame", 
+    if (str == "Inception") {
+        let inception = {
+            name:"Inception", 
             img:"<img src=\"../assets/posters/inception.jpg\">"
         };
-        watchlist2.push(avengers);
+        watchlist2.push(inception);
     }
 
     if (str == "Joker") {
@@ -105,6 +105,46 @@ function add(str) {
             img: "<img src=\"../assets/posters/joker.jpg\">"
         };
         watchlist2.push(joker);
+    }
+
+    if (str == "Jurassic Park") {
+        let jp = {
+            name:"Jurassic Park", 
+            img:"<img src=\"../assets/posters/jurassic.jpg\">"
+        };
+        watchlist2.push(jp);
+    }
+
+    if (str == "Sherlock") {
+        let sherlock = {
+            name:"Sherlock", 
+            img:"<img src=\"../assets/posters/sherlock.jpg\">"
+        };
+        watchlist2.push(sherlock);
+    }
+
+    if (str == "Split") {
+        let split = {
+            name:"Split", 
+            img:"<img src=\"../assets/posters/split.jpg\">"
+        };
+        watchlist2.push(split);
+    }
+
+    if (str == "Stranger Things") {
+        let st = {
+            name:"Stranger Things", 
+            img:"<img src=\"../assets/posters/stranger_things.jpg\">"
+        };
+        watchlist2.push(st);
+    }
+
+    if (str == "The Good Place") {
+        let tgp = {
+            name:"The Good Place", 
+            img:"<img src=\"../assets/posters/good_place.jpg\">"
+        };
+        watchlist2.push(tgp);
     }
 
     fs.writeFileSync("./apps/js/watchlist.json", JSON.stringify(watchlist2));
