@@ -243,7 +243,8 @@ function remove(str) {
 function change_avengers() {
     let data = fs.readFileSync("./apps/js/db.json");
     let db = JSON.parse(data);
-    //add and remove change is for responsiveness purpose only, the page is supposed to load using details.js and whats in the json db
+    //add and remove change is for responsiveness purpose only, 
+    //the page is supposed to load using details.js and whats in the json db
     var button = document.getElementById("add");
     if (button.value == "Add") {
         button.value = "Remove";
