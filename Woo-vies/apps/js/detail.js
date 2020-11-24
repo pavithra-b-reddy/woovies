@@ -1,171 +1,27 @@
-//import "watchlist.js";
+const fs = require("fs");
+let data = fs.readFileSync("./apps/js/db.json");
+let db = JSON.parse(data);
 
-function change_avengers() {
-    var button = document.getElementById("add");
-    if (button.value == "Add") {
-        button.value = "Remove";
-        button.innerHTML = "Remove from Watchlist";
-        //add();
+//window.addEventListener('load', function(){
+    for (var i = 0; i < db.length; i++) {
+        if (db[i].name == "Avengers: Endgame") {
+            var str;
+            if (db[i].added == "true") {
+                str += "<script type=\"text/javascript\" src=\"../js/watchlist.js\"></script>";
+                str += "<button onclick=\"change_avengers()\" id=\"add\" value=\"Remove\" class=\"button\">Remove from Watchlist</button>";
+            }
 
+            else {
+                str += "<script type=\"text/javascript\" src=\"../js/watchlist.js\"></script>";
+                str += "<button onclick=\"change_avengers()\" id=\"add\" value=\"Add\" class=\"button\">Add to Watchlist</button>";
+            }
+
+            var buttondiv = document.getElementById("button-change");
+            buttondiv.innerHTML = "";
+            buttondiv.innerHTML = str;
+
+        }
     }
 
-    else {
-        button.value = "Add";
-        button.innerHTML = "Add to Watchlist";
-        //remove();
-    }
-
-}
-
-function change_bm() {
-    var button = document.getElementById("add");
-    if (button.value == "Add") {
-        button.value = "Remove";
-        button.innerHTML = "Remove from Watchlist";
-        //add();
-
-    }
-
-    else {
-        button.value = "Add";
-        button.innerHTML = "Add to Watchlist";
-        //remove();
-    }
-
-}
-
-function change_bb() {
-    var button = document.getElementById("add");
-    if (button.value == "Add") {
-        button.value = "Remove";
-        button.innerHTML = "Remove from Watchlist";
-        //add();
-
-    }
-
-    else {
-        button.value = "Add";
-        button.innerHTML = "Add to Watchlist";
-        //remove();
-    }
-
-}
-
-function change_inception() {
-    var button = document.getElementById("add");
-    if (button.value == "Add") {
-        button.value = "Remove";
-        button.innerHTML = "Remove from Watchlist";
-        //add();
-
-    }
-
-    else {
-        button.value = "Add";
-        button.innerHTML = "Add to Watchlist";
-        //remove();
-    }
-
-}
-
-function change_joker() {
-    var button = document.getElementById("add");
-    if (button.value == "Add") {
-        button.value = "Remove";
-        button.innerHTML = "Remove from Watchlist";
-        //add();
-
-    }
-
-    else {
-        button.value = "Add";
-        button.innerHTML = "Add to Watchlist";
-        //remove();
-    }
-
-}
-
-function change_jp() {
-    var button = document.getElementById("add");
-    if (button.value == "Add") {
-        button.value = "Remove";
-        button.innerHTML = "Remove from Watchlist";
-        //add();
-
-    }
-
-    else {
-        button.value = "Add";
-        button.innerHTML = "Add to Watchlist";
-        //remove();
-    }
-
-}
-
-function change_sherlock() {
-    var button = document.getElementById("add");
-    if (button.value == "Add") {
-        button.value = "Remove";
-        button.innerHTML = "Remove from Watchlist";
-        //add();
-
-    }
-
-    else {
-        button.value = "Add";
-        button.innerHTML = "Add to Watchlist";
-        //remove();
-    }
-
-}
-
-function change_split() {
-    var button = document.getElementById("add");
-    if (button.value == "Add") {
-        button.value = "Remove";
-        button.innerHTML = "Remove from Watchlist";
-        //add();
-
-    }
-
-    else {
-        button.value = "Add";
-        button.innerHTML = "Add to Watchlist";
-        //remove();
-    }
-
-}
-
-function change_st() {
-    var button = document.getElementById("add");
-    if (button.value == "Add") {
-        button.value = "Remove";
-        button.innerHTML = "Remove from Watchlist";
-        //add();
-
-    }
-
-    else {
-        button.value = "Add";
-        button.innerHTML = "Add to Watchlist";
-        //remove();
-    }
-
-}
-
-function change_tgp() {
-    var button = document.getElementById("add");
-    if (button.value == "Add") {
-        button.value = "Remove";
-        button.innerHTML = "Remove from Watchlist";
-        //add();
-
-    }
-
-    else {
-        button.value = "Add";
-        button.innerHTML = "Add to Watchlist";
-        //remove();
-    }
-
-}
+    
+//});
