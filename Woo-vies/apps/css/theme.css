@@ -126,3 +126,7 @@ html, body {
 .link:hover {
   background-color: #111;
 }
+
+.zoom:hover {
+  transform: scale(1.03);
+}
