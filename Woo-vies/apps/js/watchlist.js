@@ -19,37 +19,37 @@ let watchlist = JSON.parse(data);
         else if (watchlist[i]["name"] == "Breaking Bad") {
             string += "<a href=\"details/Breaking Bad.html\">"
         }
-        
+
         else if (watchlist[i]["name"] == "Joker") {
             string += "<a href=\"details/Joker.html\">"
         }
-        
+
         else if (watchlist[i]["name"] == "Jurassic Park") {
             string += "<a href=\"details/Jurassic Park.html\">"
         }
-        
+
         else if (watchlist[i]["name"] == "Sherlock") {
             string += "<a href=\"details/Sherlock.html\">"
         }
-        
+
         else if (watchlist[i]["name"] == "Split") {
             string += "<a href=\"details/Split.html\">"
         }
-        
+
         else if (watchlist[i]["name"] == "Stranger Things") {
             string += "<a href=\"details/Stranger Things.html\">"
         }
-        
+
         else if (watchlist[i]["name"] == "The Good Place") {
             string += "<a href=\"details/The Good Place.html\">"
         }
-       
+
         string += watchlist[i]["img"];
         string += "</a>"
     }
-    
+
     document.getElementById('column').innerHTML = string;
-    
+
 
 function add(str) {
     let data2 = fs.readFileSync("./apps/js/watchlist.json");
@@ -57,8 +57,8 @@ function add(str) {
 
     if (str == "Avengers") {
         let avengers = {
-            name:"Avengers: Endgame", 
-            img:"<img src=\"../assets/posters/endgame.jpg\">",
+            name:"Avengers: Endgame",
+            img:"<img src=\"../assets/posters/endgame.jpg\" class=\"zoom\">",
             added: "true"
         };
         watchlist2.push(avengers);
@@ -66,8 +66,8 @@ function add(str) {
 
     if (str == "Black Mirror") {
         let bm = {
-            name:"Black Mirror", 
-            img:"<img src=\"../assets/posters/black_mirror.jpg\">",
+            name:"Black Mirror",
+            img:"<img src=\"../assets/posters/black_mirror.jpg\" class=\"zoom\">",
             added: "true"
         };
         watchlist2.push(bm);
@@ -75,8 +75,8 @@ function add(str) {
 
     if (str == "Breaking Bad") {
         let bb = {
-            name:"Breaking Bad", 
-            img:"<img src=\"../assets/posters/breaking_bad.jpg\">",
+            name:"Breaking Bad",
+            img:"<img src=\"../assets/posters/breaking_bad.jpg\" class=\"zoom\">",
             added: "true"
         };
         watchlist2.push(bb);
@@ -84,8 +84,8 @@ function add(str) {
 
     if (str == "Inception") {
         let inception = {
-            name:"Inception", 
-            img:"<img src=\"../assets/posters/inception.jpg\">",
+            name:"Inception",
+            img:"<img src=\"../assets/posters/inception.jpg\" class=\"zoom\">",
             added: "true"
         };
         watchlist2.push(inception);
@@ -94,7 +94,7 @@ function add(str) {
     if (str == "Joker") {
         let joker = {
             name: "Joker",
-            img: "<img src=\"../assets/posters/joker.jpg\">",
+            img: "<img src=\"../assets/posters/joker.jpg\" class=\"zoom\">",
             added: "true"
         };
         watchlist2.push(joker);
@@ -102,8 +102,8 @@ function add(str) {
 
     if (str == "Jurassic Park") {
         let jp = {
-            name:"Jurassic Park", 
-            img:"<img src=\"../assets/posters/jurassic.jpg\">",
+            name:"Jurassic Park",
+            img:"<img src=\"../assets/posters/jurassic.jpg\" class=\"zoom\">",
             added: "true"
         };
         watchlist2.push(jp);
@@ -111,8 +111,8 @@ function add(str) {
 
     if (str == "Sherlock") {
         let sherlock = {
-            name:"Sherlock", 
-            img:"<img src=\"../assets/posters/sherlock.jpg\">",
+            name:"Sherlock",
+            img:"<img src=\"../assets/posters/sherlock.jpg\" class=\"zoom\">",
             added: "true"
         };
         watchlist2.push(sherlock);
@@ -120,8 +120,8 @@ function add(str) {
 
     if (str == "Split") {
         let split = {
-            name:"Split", 
-            img:"<img src=\"../assets/posters/split.jpg\">",
+            name:"Split",
+            img:"<img src=\"../assets/posters/split.jpg\" class=\"zoom\">",
             added: "true"
         };
         watchlist2.push(split);
@@ -129,8 +129,8 @@ function add(str) {
 
     if (str == "Stranger Things") {
         let st = {
-            name:"Stranger Things", 
-            img:"<img src=\"../assets/posters/stranger_things.jpg\">",
+            name:"Stranger Things",
+            img:"<img src=\"../assets/posters/stranger_things.jpg\" class=\"zoom\">",
             added: "true"
         };
         watchlist2.push(st);
@@ -138,8 +138,8 @@ function add(str) {
 
     if (str == "The Good Place") {
         let tgp = {
-            name:"The Good Place", 
-            img:"<img src=\"../assets/posters/good_place.jpg\">",
+            name:"The Good Place",
+            img:"<img src=\"../assets/posters/good_place.jpg\" class=\"zoom\">",
             added: "true"
         };
         watchlist2.push(tgp);
@@ -243,7 +243,7 @@ function remove(str) {
 function change_avengers() {
     let data = fs.readFileSync("./apps/js/db.json");
     let db = JSON.parse(data);
-    //add and remove change is for responsiveness purpose only, 
+    //add and remove change is for responsiveness purpose only,
     //the page is supposed to load using details.js and whats in the json db
     var button = document.getElementById("add");
     if (button.value == "Add") {

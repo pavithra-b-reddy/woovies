@@ -113,6 +113,20 @@ html, body {
   text-decoration: none;
   color: white;
   padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   font-size: 15px;
   text-align: left;
+  border: 1px solid #333;
+  background: #333;
+  border-radius: 5px 5px 5px 5px;
+}
+
+.link:hover {
+  background-color: #111;
+}
+
+.zoom:hover {
+  transform: scale(1.03);
 }
