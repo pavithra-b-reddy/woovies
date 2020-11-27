@@ -57,7 +57,7 @@ function add(str) {
 
     if (str == "Avengers") {
         let avengers = {
-            name:"Avengers: Endgame",
+            name:"Avengers: Endgame", 
             img:"<img src=\"../assets/posters/endgame.jpg\" class=\"zoom\">",
             added: "true"
         };
@@ -66,7 +66,7 @@ function add(str) {
 
     if (str == "Black Mirror") {
         let bm = {
-            name:"Black Mirror",
+            name:"Black Mirror", 
             img:"<img src=\"../assets/posters/black_mirror.jpg\" class=\"zoom\">",
             added: "true"
         };
@@ -75,7 +75,7 @@ function add(str) {
 
     if (str == "Breaking Bad") {
         let bb = {
-            name:"Breaking Bad",
+            name:"Breaking Bad", 
             img:"<img src=\"../assets/posters/breaking_bad.jpg\" class=\"zoom\">",
             added: "true"
         };
@@ -84,7 +84,7 @@ function add(str) {
 
     if (str == "Inception") {
         let inception = {
-            name:"Inception",
+            name:"Inception", 
             img:"<img src=\"../assets/posters/inception.jpg\" class=\"zoom\">",
             added: "true"
         };
@@ -102,7 +102,7 @@ function add(str) {
 
     if (str == "Jurassic Park") {
         let jp = {
-            name:"Jurassic Park",
+            name:"Jurassic Park", 
             img:"<img src=\"../assets/posters/jurassic.jpg\" class=\"zoom\">",
             added: "true"
         };
@@ -111,7 +111,7 @@ function add(str) {
 
     if (str == "Sherlock") {
         let sherlock = {
-            name:"Sherlock",
+            name:"Sherlock", 
             img:"<img src=\"../assets/posters/sherlock.jpg\" class=\"zoom\">",
             added: "true"
         };
@@ -120,7 +120,7 @@ function add(str) {
 
     if (str == "Split") {
         let split = {
-            name:"Split",
+            name:"Split", 
             img:"<img src=\"../assets/posters/split.jpg\" class=\"zoom\">",
             added: "true"
         };
@@ -129,7 +129,7 @@ function add(str) {
 
     if (str == "Stranger Things") {
         let st = {
-            name:"Stranger Things",
+            name:"Stranger Things", 
             img:"<img src=\"../assets/posters/stranger_things.jpg\" class=\"zoom\">",
             added: "true"
         };
@@ -138,7 +138,7 @@ function add(str) {
 
     if (str == "The Good Place") {
         let tgp = {
-            name:"The Good Place",
+            name:"The Good Place", 
             img:"<img src=\"../assets/posters/good_place.jpg\" class=\"zoom\">",
             added: "true"
         };
@@ -275,7 +275,7 @@ function change_avengers() {
 
 //change the rest like the one above
 function change_bm() {
-    var button = document.getElementById("add");
+    var button = document.getElementById("bm");
     if (button.value == "Add") {
         button.value = "Remove";
         button.innerHTML = "Remove from Watchlist";
@@ -287,12 +287,17 @@ function change_bm() {
         button.value = "Add";
         button.innerHTML = "Add to Watchlist";
         remove("Black Mirror");
+        for (var i = 0; i < db.length; i++) {
+            if (db[i].name == "Black Mirror") {
+                db[i].added = "false";
+            }
+        }
     }
 
 }
 
 function change_bb() {
-    var button = document.getElementById("add");
+    var button = document.getElementById("bb");
     if (button.value == "Add") {
         button.value = "Remove";
         button.innerHTML = "Remove from Watchlist";
@@ -304,16 +309,27 @@ function change_bb() {
         button.value = "Add";
         button.innerHTML = "Add to Watchlist";
         remove("Breaking Bad");
+        for (var i = 0; i < db.length; i++) {
+            if (db[i].name == "Breaking Bad") {
+                db[i].added = "false";
+            }
+        }
     }
 
 }
 
 function change_inception() {
-    var button = document.getElementById("add");
+    var button = document.getElementById("inception");
     if (button.value == "Add") {
         button.value = "Remove";
         button.innerHTML = "Remove from Watchlist";
         add("Inception");
+        for (var i = 0; i < db.length; i++) {
+            if (db[i].name == "Inception") {
+                db[i].added = "true";
+            }
+        }
+
 
     }
 
@@ -321,16 +337,27 @@ function change_inception() {
         button.value = "Add";
         button.innerHTML = "Add to Watchlist";
         remove("Inception");
+        for (var i = 0; i < db.length; i++) {
+            if (db[i].name == "Inception") {
+                db[i].added = "false";
+            }
+        }
     }
 
 }
 
 function change_joker() {
-    var button = document.getElementById("add");
+    var button = document.getElementById("joker");
     if (button.value == "Add") {
         button.value = "Remove";
         button.innerHTML = "Remove from Watchlist";
         add("Joker");
+        for (var i = 0; i < db.length; i++) {
+            if (db[i].name == "Joker") {
+                db[i].added = "true";
+            }
+        }
+
 
     }
 
@@ -338,16 +365,27 @@ function change_joker() {
         button.value = "Add";
         button.innerHTML = "Add to Watchlist";
         remove("Joker");
+        for (var i = 0; i < db.length; i++) {
+            if (db[i].name == "Joker") {
+                db[i].added = "false";
+            }
+        }
     }
 
 }
 
 function change_jp() {
-    var button = document.getElementById("add");
+    var button = document.getElementById("jp");
     if (button.value == "Add") {
         button.value = "Remove";
         button.innerHTML = "Remove from Watchlist";
         add("Jurassic Park");
+        for (var i = 0; i < db.length; i++) {
+            if (db[i].name == "Jurassic Park") {
+                db[i].added = "true";
+            }
+        }
+
 
     }
 
@@ -355,16 +393,27 @@ function change_jp() {
         button.value = "Add";
         button.innerHTML = "Add to Watchlist";
         remove("Jurassic Park");
+        for (var i = 0; i < db.length; i++) {
+            if (db[i].name == "Jurassic Park") {
+                db[i].added = "false";
+            }
+        }
     }
 
 }
 
 function change_sherlock() {
-    var button = document.getElementById("add");
+    var button = document.getElementById("sherlock");
     if (button.value == "Add") {
         button.value = "Remove";
         button.innerHTML = "Remove from Watchlist";
         add("Sherlock");
+        for (var i = 0; i < db.length; i++) {
+            if (db[i].name == "Sherlock") {
+                db[i].added = "true";
+            }
+        }
+
 
     }
 
@@ -372,16 +421,27 @@ function change_sherlock() {
         button.value = "Add";
         button.innerHTML = "Add to Watchlist";
         remove("Sherlock");
+        for (var i = 0; i < db.length; i++) {
+            if (db[i].name == "Sherlock") {
+                db[i].added = "false";
+            }
+        }
     }
 
 }
 
 function change_split() {
-    var button = document.getElementById("add");
+    var button = document.getElementById("split");
     if (button.value == "Add") {
         button.value = "Remove";
         button.innerHTML = "Remove from Watchlist";
         add("Split");
+        for (var i = 0; i < db.length; i++) {
+            if (db[i].name == "Split") {
+                db[i].added = "true";
+            }
+        }
+
 
     }
 
@@ -389,16 +449,27 @@ function change_split() {
         button.value = "Add";
         button.innerHTML = "Add to Watchlist";
         remove("Split");
+        for (var i = 0; i < db.length; i++) {
+            if (db[i].name == "Split") {
+                db[i].added = "false";
+            }
+        }
     }
 
 }
 
 function change_st() {
-    var button = document.getElementById("add");
+    var button = document.getElementById("st");
     if (button.value == "Add") {
         button.value = "Remove";
         button.innerHTML = "Remove from Watchlist";
         add("Stranger Things");
+        for (var i = 0; i < db.length; i++) {
+            if (db[i].name == "Stranger Things") {
+                db[i].added = "true";
+            }
+        }
+
 
     }
 
@@ -406,16 +477,27 @@ function change_st() {
         button.value = "Add";
         button.innerHTML = "Add to Watchlist";
         remove("Stranger Things");
+        for (var i = 0; i < db.length; i++) {
+            if (db[i].name == "Stranger Things") {
+                db[i].added = "false";
+            }
+        }
     }
 
 }
 
 function change_tgp() {
-    var button = document.getElementById("add");
+    var button = document.getElementById("tgp");
     if (button.value == "Add") {
         button.value = "Remove";
         button.innerHTML = "Remove from Watchlist";
         add("The Good Place");
+        for (var i = 0; i < db.length; i++) {
+            if (db[i].name == "The Good Place") {
+                db[i].added = "true";
+            }
+        }
+
 
     }
 
@@ -423,6 +505,11 @@ function change_tgp() {
         button.value = "Add";
         button.innerHTML = "Add to Watchlist";
         remove("The Good Place");
+        for (var i = 0; i < db.length; i++) {
+            if (db[i].name == "The Good Place") {
+                db[i].added = "false";
+            }
+        }
     }
 
 }
