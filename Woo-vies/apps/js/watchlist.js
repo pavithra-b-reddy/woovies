@@ -243,8 +243,7 @@ function remove(str) {
 function change_avengers() {
     let data = fs.readFileSync("./apps/js/db.json");
     let db = JSON.parse(data);
-    //add and remove change is for responsiveness purpose only,
-    //the page is supposed to load using details.js and whats in the json db
+    //add and remove change is for responsiveness only
     var button = document.getElementById("add");
     if (button.value == "Add") {
         button.value = "Remove";
@@ -275,11 +274,18 @@ function change_avengers() {
 
 //change the rest like the one above
 function change_bm() {
+    let data = fs.readFileSync("./apps/js/db.json");
+    let db = JSON.parse(data);
     var button = document.getElementById("bm");
     if (button.value == "Add") {
         button.value = "Remove";
         button.innerHTML = "Remove from Watchlist";
         add("Black Mirror");
+        for (var i = 0; i < db.length; i++) {
+            if (db[i].name == "Black Mirror") {
+                db[i].added = "true";
+            }
+        }
 
     }
 
@@ -293,15 +299,22 @@ function change_bm() {
             }
         }
     }
-
+    fs.writeFileSync("./apps/js/db.json", JSON.stringify(db));
 }
 
 function change_bb() {
+    let data = fs.readFileSync("./apps/js/db.json");
+    let db = JSON.parse(data);
     var button = document.getElementById("bb");
     if (button.value == "Add") {
         button.value = "Remove";
         button.innerHTML = "Remove from Watchlist";
         add("Breaking Bad");
+        for (var i = 0; i < db.length; i++) {
+            if (db[i].name == "Breaking Bad") {
+                db[i].added = "true";
+            }
+        }
 
     }
 
@@ -315,10 +328,12 @@ function change_bb() {
             }
         }
     }
-
+    fs.writeFileSync("./apps/js/db.json", JSON.stringify(db));
 }
 
 function change_inception() {
+    let data = fs.readFileSync("./apps/js/db.json");
+    let db = JSON.parse(data);
     var button = document.getElementById("inception");
     if (button.value == "Add") {
         button.value = "Remove";
@@ -343,10 +358,12 @@ function change_inception() {
             }
         }
     }
-
+    fs.writeFileSync("./apps/js/db.json", JSON.stringify(db));
 }
 
 function change_joker() {
+    let data = fs.readFileSync("./apps/js/db.json");
+    let db = JSON.parse(data);
     var button = document.getElementById("joker");
     if (button.value == "Add") {
         button.value = "Remove";
@@ -371,10 +388,12 @@ function change_joker() {
             }
         }
     }
-
+    fs.writeFileSync("./apps/js/db.json", JSON.stringify(db));
 }
 
 function change_jp() {
+    let data = fs.readFileSync("./apps/js/db.json");
+    let db = JSON.parse(data);
     var button = document.getElementById("jp");
     if (button.value == "Add") {
         button.value = "Remove";
@@ -399,10 +418,12 @@ function change_jp() {
             }
         }
     }
-
+    fs.writeFileSync("./apps/js/db.json", JSON.stringify(db));
 }
 
 function change_sherlock() {
+    let data = fs.readFileSync("./apps/js/db.json");
+    let db = JSON.parse(data);
     var button = document.getElementById("sherlock");
     if (button.value == "Add") {
         button.value = "Remove";
@@ -427,10 +448,12 @@ function change_sherlock() {
             }
         }
     }
-
+    fs.writeFileSync("./apps/js/db.json", JSON.stringify(db));
 }
 
 function change_split() {
+    let data = fs.readFileSync("./apps/js/db.json");
+    let db = JSON.parse(data);
     var button = document.getElementById("split");
     if (button.value == "Add") {
         button.value = "Remove";
@@ -455,10 +478,12 @@ function change_split() {
             }
         }
     }
-
+    fs.writeFileSync("./apps/js/db.json", JSON.stringify(db));
 }
 
 function change_st() {
+    let data = fs.readFileSync("./apps/js/db.json");
+    let db = JSON.parse(data);
     var button = document.getElementById("st");
     if (button.value == "Add") {
         button.value = "Remove";
@@ -483,10 +508,12 @@ function change_st() {
             }
         }
     }
-
+    fs.writeFileSync("./apps/js/db.json", JSON.stringify(db));
 }
 
 function change_tgp() {
+    let data = fs.readFileSync("./apps/js/db.json");
+    let db = JSON.parse(data);
     var button = document.getElementById("tgp");
     if (button.value == "Add") {
         button.value = "Remove";
@@ -511,5 +538,5 @@ function change_tgp() {
             }
         }
     }
-
+    fs.writeFileSync("./apps/js/db.json", JSON.stringify(db));
 }
