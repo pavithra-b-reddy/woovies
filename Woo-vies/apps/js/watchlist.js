@@ -244,7 +244,7 @@ function change_avengers() {
     let data = fs.readFileSync("./apps/js/db.json");
     let db = JSON.parse(data);
     //add and remove change is for responsiveness only
-    var button = document.getElementById("add");
+    var button = document.getElementById("avengers");
     if (button.value == "Add") {
         button.value = "Remove";
         button.innerHTML = "Remove from Watchlist";
@@ -272,7 +272,7 @@ function change_avengers() {
     fs.writeFileSync("./apps/js/db.json", JSON.stringify(db));
 }
 
-//change the rest like the one above
+
 function change_bm() {
     let data = fs.readFileSync("./apps/js/db.json");
     let db = JSON.parse(data);
