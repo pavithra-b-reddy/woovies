@@ -2,21 +2,21 @@
 let data2 = fs.readFileSync("./apps/js/db.json");
 let db = JSON.parse(data2);
 
-var buttonbm = document.getElementById("bm");
+var buttonsherlock = document.getElementById("sherlock");
 
 
 for (var i = 0; i < db.length; i++) {
-    if (db[i].name == "Black Mirror") {
+    if (db[i].name == "Sherlock") {
         var str;
         if (db[i].added == "true") {
             str = "Remove from Watchlist";
-            buttonbm.value = "Remove"
+            buttonsherlock.value = "Remove"
         }
 
         else {
             str = "Add to Watchlist";
-            buttonbm.value = "Add";
+            buttonsherlock.value = "Add";
         }
-        buttonbm.innerHTML = str;     
+        buttonsherlock.innerHTML = str;     
     }
 } 
